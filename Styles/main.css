@@ -1,0 +1,403 @@
+.btn-group button {
+border: 1px solid black; /* Green border */
+color: white; /* White text */
+padding: 10px 24px; /* Some padding */
+cursor: pointer;
+}
+.btn-group .geel{
+background-color: #cfbe2c; /* Green background */
+}
+.btn-group .blauw{
+background-color: #203cba;
+}
+.btn-group .rood{
+background-color: #c51f47;
+}
+.btn-group .groen{
+background-color: #74df42;
+}
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+content: "";
+clear: both;
+display: table;
+}
+.btn-group {
+    display: flex;
+    justify-content: baseline;
+    margin: auto;
+    /* width: 30%; */
+    flex-direction: column;
+}
+/* Add a background color on hover */
+.btn-group button:hover {
+padding: 10px 30px;
+}
+.btn-group button:active {
+padding: 10px 30px;
+}
+/*Body*/
+body{
+background-image: linear-gradient(#4c4c4cb0, #000061c7), url(../images/internet-of-things.jpg);
+margin: 0;
+font-family: 'Lato', sans-serif;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;}
+main {
+margin: 60px auto;
+width: 90%;
+max-width: 90%;
+margin-top: 30px;
+display: flex;
+}
+body > footer {
+background-color: #070a603b;
+width: 100%;
+padding: 20px 0px;
+color:white;
+text-align: center;
+font-size: 10px;
+}
+section {
+    width: 100%;
+    margin: 20px 0px;
+}
+/**/
+/*Tekst*/
+@font-face {
+font-family: "Lato";
+src: url('698242188-Lato-Bla.eot');
+src: url('698242188-Lato-Bla.eot?#iefix') format('embedded-opentype'),
+url('698242188-Lato-Bla.svg#Lato Black') format('svg'),
+url('698242188-Lato-Bla.woff') format('woff'),
+url('698242188-Lato-Bla.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+em{
+font-weight: lighter;
+font-size:10px;
+display: block;
+margin-top:5px;
+}
+h1.hoofdtitel{
+font-size:47px;
+text-align: center;
+}
+article h1{
+font-size:3rem;
+}
+article h2{
+font-size:2rem;
+margin-bottom:8px;
+text-align: center;
+}
+h1, article h2{
+color: white;
+text-shadow: 0px 4px 14px #171717;
+letter-spacing: 1px;
+}
+
+/*\*/
+/*Navbar*/
+header nav{
+background-color: #070a6185;
+font-family: sans-serif;
+color: white;
+position: fixed;
+top: 0;
+width:100%;
+padding: 5px 0px;
+}
+header nav li{
+display: none;
+}
+header nav a{
+margin: 0 10px;
+border-radius: 20px 0px 20px 0px;
+padding: 10px 25px;
+color: #e5edf4;
+box-shadow: 0px 3px 9px 0px #ffffff;
+background-color: #060b5f;
+}
+header nav a:hover{
+border-radius: 0px 20px 0px 20px;
+padding: 10px 25px;
+color: white;
+background-color:#040da2;
+transition: all 0.5s;
+box-shadow: 0px 3px 9px 0px #ffffff;
+}
+nav ul{
+list-style: none;
+cursor: default;
+display: flex;
+justify-content: space-around;
+}
+/**/
+/*Articles & sections*/
+section{
+width: 100%;
+}
+#Alfa img#velglinks {
+    position: absolute;
+    top: 379px;
+    max-width: 7.9%;
+    left: 438px;
+
+}
+#Alfa img#velgrechts {
+    position: absolute;
+    top: 377px;
+    max-width: 7.8%;
+    left: 990px;
+}
+#Lambo img#velglinks {
+    position: absolute;
+    top: 376px;
+    max-width: 7.9%;
+    left: 452px;
+  }
+#Lambo img#velgrechts {
+    position: absolute;
+    top: 373px;
+    max-width: 8.1%;
+    left: 1063px;
+}
+#Porsche img#velglinks {
+    position: absolute;
+    top: 374px;
+    max-width: 7.2%;
+    left: 445px;
+}
+#Porsche img#velgrechts {
+    position: absolute;
+    top: 380px;
+    max-width: 7.2%;
+    left: 1025px;
+}
+.rijden{
+  animation-duration: 2.7s;
+    animation-name: slidein2;
+}
+.rijdenauto{
+  animation-duration: 2.7s;
+  animation-name: slidein;
+  z-index: 999999999;
+}
+article {
+margin: 20px 10px 50px 0px;
+justify-content: space-around;
+flex-wrap: wrap;
+background-color: #e3eaf4f0;
+padding: 10px 20px;
+box-shadow: 0px 3px 18px 0px #000000;
+border-radius: 20px;
+}
+article img{
+max-width: 100%;
+display: block;
+margin:auto;
+}
+article footer{
+margin:10px 0px;
+}
+/*TABS*/
+.tab {
+background-color: rgba(227, 234, 244, 0.94);
+box-shadow: rgb(0, 0, 0) 0px 3px 18px 0px;
+margin: 20px 20px 50px;
+padding: 5px 5px;
+border-radius: 20px;
+overflow: hidden;
+width: 10%;
+display: inline-grid;
+}
+.tab button {
+background-color: inherit;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 5px 5px;
+transition: 0.3s;
+font-size: 16px;
+color: #203563;
+}
+.tab button.active {
+background-color: #ffffff;
+color: #2ac7ef;
+}
+#firsttab {
+display: block;
+}
+.tabcontent{
+  z-index: 99999999999!important;
+}
+/**/
+/*Code van knopje komt van :https://codepen.io/mohaiman/pen/jqKzVb */
+.knopje{
+border-radius: 4px;
+background-color:#f9f9f9;
+border: none;
+padding: 10px 40px;
+width: auto;
+transition: all 0.5s;
+}
+button.draaiknop {
+border-radius: 4px;
+background-color:#f9f9f9;
+border: none;
+padding: 10px 40px;
+width: auto;
+}
+.knopje, .draaiknop{
+text-align: center;
+cursor: pointer;
+font-size:20px;
+margin: auto;
+}
+.knopje span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+color: #070a61;
+font-weight: 800;
+}
+.knopje span:after {
+content: '»';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -30px;
+transition: 0.5s;
+}
+.knopje:hover span {
+padding-right: 25px;
+}
+.knopje:hover span:after {
+opacity: 1;
+right: 0;
+}
+/**/
+/*Tabellen*/
+th{
+text-transform: capitalize;
+margin: 0px 10px;
+}
+table{
+border-top:1px solid black;
+border-bottom:1px solid black;
+border-collapse: collapse;
+margin-top:20px ;
+margin: auto;
+}
+tr:nth-child(even) {
+background-color: lightgray;
+}
+tr:nth-child(odd) {
+background-color: #fff;
+}
+td{
+padding: 15px 10px;
+min-height: 30px;
+text-align: center;
+border-bottom: 2px solid black;
+}
+th{
+padding: 15px 10px;
+border-bottom: 5px solid black;
+}
+td:nth-child(1){
+font-weight: bold;
+font-style: italic;
+}
+/**/
+/*Formulier*/
+fieldset {
+margin: 20px 0px;
+border: 1px solid #05064f;
+max-width: 320px;
+width: 90%;
+margin: auto;
+}
+fieldset:nth-child(2) label{
+display: inline-block;
+float: left;
+clear: left;
+width: 120px;
+text-align: left;
+}
+fieldset:nth-child(2) input {
+display: inline-block;
+float: left;
+}
+legend{
+color: #03054f;
+font-size: 17px;
+font-weight: 600;
+}
+/**/
+/*Bedankpagina*/
+#bedankt section{
+width: 100%;
+padding: 50px;
+}
+/*Animaties*/
+.rotate {
+animation: rotation 1.1s infinite linear;
+}
+.rotatesneller {
+animation: rotation 1s infinite linear;
+}
+.rotatelangzamer {
+animation: rotation 3s infinite linear;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes slidein2 {
+  from {
+    margin-left: 59%;
+    width: 200%; 
+    transform: rotate(359deg);
+  }
+
+  to {
+    margin-left: 0%;
+    width: 200%;
+    transform: rotate(0deg);
+  }
+}
+
+/*#velglinks{
+animation-duration: 2.7s;
+  animation-name: slidein2;
+  max-width: inherit;
+}
+ #velgrechts{
+animation-duration: 2.7s;
+animation-name: slidein3;
+max-width: 7.7%;
+} */
+
+/* Spinning the sphere using key frames */
+
+@keyframes rotation {
+from {
+transform: rotate(359deg);
+}
+to {
+transform: rotate(0deg);
+}
+}
